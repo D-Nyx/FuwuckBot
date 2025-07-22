@@ -1,7 +1,8 @@
 module.exports = {
-    name:"saludar",
+    name:"saluda",
     descripcion:"Saluda",
-    execute(mensaje){
-       mensaje.reply("Hola soy German :v")
+    execute(mensaje, args){
+       const user = mensaje.mentions.users.first()  || mensaje.author;
+       mensaje.reply(`Holaaa <@${user.id}>`)
     }
 }
