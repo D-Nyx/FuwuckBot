@@ -83,16 +83,8 @@ module.exports = {
         mensaje.reply(decir)
         break;
 
-      default: mensaje.reply("sd")
 
     }
 
-    const InformacionCompleta = `
-  Name: ${UserName}
-  Name Global:  ${UserGlobal}
-  
-  `
-    mensaje.reply(InformacionCompleta)
-
   }
-}
+  }
